@@ -1,0 +1,81 @@
+body {
+  background: linear-gradient(135deg, #0e0e0e, #1a1a1a);
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.currency-container {
+  text-align: center;
+  padding: 25px;
+}
+
+.currency-title {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #ffdd33;
+  text-shadow: 0 0 12px rgba(255, 220, 50, 0.4);
+}
+
+/* Video wrapper with neon frame */
+.currency-video-wrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0px 0px 25px rgba(255, 220, 50, 0.25);
+}
+
+.currency-video {
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+}
+
+.currency-overlay {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Buttons Row */
+.currency-buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Buttons */
+.currency-btn {
+  padding: 14px 26px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+/* Stop button */
+.currency-btn.stop {
+  background: #ff3b30;
+  color: white;
+}
+.currency-btn.stop:hover {
+  background: #ff1f1f;
+  transform: translateY(-3px);
+}
+
+/* Go Back button */
+.currency-btn.back {
+  background: #ffe680;
+  color: black;
+}
+.currency-btn.back:hover {
+  background: #ffdf66;
+  transform: translateY(-3px);
+}
