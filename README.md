@@ -60,18 +60,18 @@ The system performs **walking assistance**, **obstacle detection**, **object ide
 
 ## **1. Clone the project**
 
--- git clone https://github.com/<your-username>/BlindSight-AI-Blind-Assistant.git
--- cd BlindSight-AI-Blind-Assistant
+- git clone https://github.com/sumangalagouda/BlindSight-AI-Blind-Assistant.git
+- cd BlindSight-AI-Blind-Assistant
 
 ## Backend Setup (Flask + YOLO)
--- cd backend
--- python -m venv venv
--- venv\Scripts\activate       # Windows
--- source venv/bin/activate   # Mac/Linux
--- pip install -r requirements.txt
--- python app.py
+- cd backend
+- python -m venv venv
+- venv\Scripts\activate       # Windows
+- source venv/bin/activate   # Mac/Linux
+- pip install -r requirements.txt
+- python app.py
 
 ## Frontend Setup (React + Vite)
--- cd frontend
--- npm install
--- npm run dev
+- cd frontend
+- npm install
+- npm run dev
