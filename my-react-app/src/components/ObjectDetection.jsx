@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import { io } from "socket.io-client";
-import "./object.css"; // ADD THIS FILE
+import "./object.css"; 
 
 const socket = io("http://localhost:5000");
 

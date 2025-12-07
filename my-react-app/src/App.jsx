@@ -2,7 +2,7 @@ import CameraWebSocket from "./components/CameraWebSocket";
 import ObjectDetection from "./components/ObjectDetection";
 import Currency from "./components/Currency";
 import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
-import "./index.css"; // ADD THIS
+import "./index.css"; 
 
 function Home() {
   const navigate = useNavigate();

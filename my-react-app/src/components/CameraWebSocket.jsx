@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import { io } from "socket.io-client";
-import "./assistant.css"; // ADD THIS CSS FILE
+import "./assistant.css"; 
 
-// Connect WebSocket
+
 const socket = io("http://localhost:5000");
 
 export default function CameraWebSocket() {
@@ -24,7 +24,6 @@ export default function CameraWebSocket() {
     });
 
     const interval = setInterval(() => sendFrame(), 1500);
-    // Cleanup: stop speaking, stop camera, and remove listeners on unmount/navigation
     const handleVisibility = () => {
       if (document.hidden) {
         window.speechSynthesis.cancel();
@@ -124,7 +123,7 @@ export default function CameraWebSocket() {
           // allow current speech to continue; don't cancel here
         }
         const sumUtter = new SpeechSynthesisUtterance(summaryText);
-        sumUtter.rate = urgent ? 1.0 : 1.05; // moderate pace
+        sumUtter.rate = urgent ? 1.0 : 1.05; 
         sumUtter.onend = () => {
           const t = Date.now();
           lastSpokenRef.current = { text: `${warnings.join("; ")}${warnings.length ? "; " : ""}${summaryText}`.trim(), at: t };
@@ -231,7 +230,6 @@ export default function CameraWebSocket() {
         <button
           className="control-btn back"
           onClick={() => {
-            // Stop speech immediately when going back/home
             window.speechSynthesis.cancel();
             window.history.back();
           }}
